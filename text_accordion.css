@@ -1,0 +1,34 @@
+label {
+    cursor: pointer;
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+
+    .text_accordion > div {
+        border: 0.1rem solid black;
+        border-radius: 0.4rem;
+        border-bottom-width: 0.4rem;
+        margin: 0;
+    }
+
+    .text_accordion input {
+        display: none;
+    }
+
+    .text_accordion input ~ div {
+        height: 0;
+        margin: 0 2rem;
+        overflow: hidden;
+    }
+
+    .text_accordion :checked ~ label {
+        background-color: black;
+        color: white;
+    }
+
+    .text_accordion :checked ~ div {
+        height: auto;
+    }
