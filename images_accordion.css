@@ -1,0 +1,61 @@
+ul.images_accordion {
+    list-style: none;
+}
+
+    .images_accordion li {
+    }
+
+    .images_accordion li > div {
+        float: left;
+        height: 32rem;
+        margin: 0 0.2rem;
+        opacity: 0.6;
+        overflow: hidden;
+        position: relative;
+        transition: width 0.6s ease;
+        width: 1rem;
+    }
+
+    .images_accordion :checked + div {
+        opacity: 1;
+        width: 60%;
+    }
+
+    .images_accordion label {
+        background-color: white;
+        color: gray;
+        height: 100%;
+        opacity: 0;
+        padding-top: 36%;
+        position: absolute;
+        top: 0;
+        width: 1rem;
+    }
+
+        .images_accordion div label:last-child {
+            right: 0;
+        }
+
+        .images_accordion :checked + div label {
+            opacity: 0.4;
+        }
+
+    .images_accordion img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .images_accordion a {
+        position: absolute;
+        bottom: 1em;
+        right: 2em;
+    }
+
+    .images_accordion input {
+        display: none;
+    }
+
+footer {
+    clear: both;
+    padding-top: 4rem;
+}
