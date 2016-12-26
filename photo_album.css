@@ -1,0 +1,54 @@
+.photo_album {
+    background-color: silver;
+    float: left;
+    list-style: none;
+    padding: 1rem;
+}
+
+.photo_album li {
+    float: left;
+    margin: 1% 1.5%;
+    text-align: right;
+    width: 30%;
+}
+
+.photo_album li input {
+    display: none;
+}
+
+.photo_album li > div {
+    background-color: white;
+    border: 0.1rem solid silver;
+    border-radius: 0.4rem;
+    padding: 0 0 0.4rem 0;
+    width: 100%;
+}
+
+.photo_album li label {
+    cursor: pointer;
+}
+
+.photo_album li img {
+    padding: 5%;
+    width: 90%;
+}
+
+.photo_album li :checked ~ div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 1%;
+    width: 98%;
+    z-index: 10;
+}
+
+.photo_album li a {
+    padding: 0 1rem 0.4rem;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    padding: 1rem;
+}
+
