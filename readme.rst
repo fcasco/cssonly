@@ -10,3 +10,5 @@ than others but the only purpose is to play a little with CSS
 and learn a thing or two in the process.
 
 Feel free to fork away and use or change anything you like.
+
+Live site at http://cssonly.netlify.com/
