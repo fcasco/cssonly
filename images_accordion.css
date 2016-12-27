@@ -16,6 +16,11 @@ ul.images_accordion {
         width: 1rem;
     }
 
+    .images_accordion li > div a {
+        font-weight: bold;
+        text-shadow: 0 0 0.1rem white;
+    }
+
     .images_accordion :checked + div {
         opacity: 1;
         width: 60%;
