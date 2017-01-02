@@ -1,0 +1,48 @@
+p {
+    text-align: center;
+}
+
+.main_container {
+    background-color: silver;
+    color: black;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    transition:
+        background-color 1s,
+        color 1s;
+}
+
+label[for="light_dark_switch"] {
+    background-color: silver;
+    border-radius: 1rem;
+    border: 0.1rem solid silver;
+    box-shadow: 0 0 0.5rem white;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    right: 1rem;
+    text-align: center;
+    top: 1rem;
+    width: 3rem;
+}
+
+label[for="light_dark_switch"]:hover {
+    box-shadow: 0 0 0.5rem white inset;
+}
+
+[name="light_dark_switch"] {
+    display: none;
+}
+
+[name="light_dark_switch"]:checked ~ .main_container {
+    background-color: gray;
+    color: white;
+}
+
+[name="light_dark_switch"]:checked ~ label[for="light_dark_switch"] {
+    background-color: gray;
+    color: black;
+}
